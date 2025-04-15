@@ -32,6 +32,10 @@ message BookStream {
   repeated Book books = 1;
 }
 
+message SomeEntity {
+  string id = 1;
+}
+
 service BookService {
   rpc SearchBooks(BookFilter) returns (stream Book);
 }
